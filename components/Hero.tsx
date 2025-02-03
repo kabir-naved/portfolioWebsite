@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react";  
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/textGenerateEffect";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="pb-20 pt-36">
         <div>
           <Spotlight
-            className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+            className="-top-40 -left-10   md:-left-32 md:-top-20 h-screen"
             fill="white"
           />
           <Spotlight
@@ -28,11 +28,11 @@ const Hero = () => {
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
               <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                 {" "}
-                hai
+                Dynamic Wev Magic with Next.js
               </h1>
 
               <TextGenerateEffect
-                words="I am Naved Kabir"
+                words="Transforming Ideas into Reality"
                 className=" text-center text-[40px] md:text-6xl lg:text-8xl"
               />
 
