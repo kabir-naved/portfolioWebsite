@@ -1,10 +1,14 @@
 "use client";
+import Tech from "@/components/Tech";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import { FaHome } from "react-icons/fa";
+import Experience from "@/components/Experiences";
+import Footer from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 
 
 const Home = () => {
@@ -15,6 +19,10 @@ const Home = () => {
         <Hero />
         <Grid/>
         <RecentProjects />
+        {/* <Tech/> */}
+        <Experience/>
+        <Contact/>
+        <Footer/>
       </div>
     </main>
   );
