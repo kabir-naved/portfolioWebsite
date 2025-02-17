@@ -49,13 +49,6 @@ export const Contact = () => {
       user_message: userMessage,
     };
 
-    console.log("Sending data:", {
-      serviceID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      templateID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-      data: templateParams,
-    });
-
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -78,7 +71,6 @@ export const Contact = () => {
           }, 5000);
         },
         (error) => {
-          console.error("EmailJS Error:", error);
           setBtnText("Submit");
           setIsLoading(false);
           setMessage({
