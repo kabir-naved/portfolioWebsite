@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "AI Podcast App",
+    title: "AI Podcast App [ONWork]",
     des: "A web app that uses AI to generate podcasts from text.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
