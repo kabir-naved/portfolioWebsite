@@ -1,10 +1,16 @@
+'use client';
+
 import { FaLocationArrow } from "react-icons/fa6";
+import { ScrollY } from "./utils/ScrollY";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
+  const handleClick = () => {
+    ScrollY(710.555); 
+  };
   return (
     <div className="pb-20 pt-36">
       {/**
@@ -52,13 +58,14 @@ const Hero = () => {
             Hi👋 I&apos;m Kabir, a Frontend Developer and Fullstack Next.js Developer .
           </p>
 
-          <a href="#about">
+      
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
+              handleClick={handleClick}
             />
-          </a>
+          
         </div>
       </div>
     </div>

@@ -1,9 +1,4 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
+import { link } from "fs";
 
 export const gridItems = [
   {
@@ -76,7 +71,7 @@ export const projects = [
     des: "A modern wep app with a minimalist design and a focus on user experience.",
     img: "/p11.png",
     iconLists: ["/re.svg", "/tail.svg", "/fm.svg"],
-    link: "/ui.refokus.com",  
+    link: "https://reefokus.netlify.app/",
   },
   {
     id: 2,
@@ -84,7 +79,7 @@ export const projects = [
     des: "Recreated the Xora website, combining animations and a modern design.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/",
   },
   {
     id: 3,
@@ -92,15 +87,15 @@ export const projects = [
     des: "A Robust web for StartUp to post there company detail and get Investors.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "/bidpark.vercel.app",
+    link: "https://bid-park.vercel.app",
   },
   {
     id: 4,
     title: "AI Podcast App",
-    des: "A web app that uses AI to generate podcasts from text.",  
+    des: "A web app that uses AI to generate podcasts from text.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg","/c.svg"],
-    link: "/ui.yoom.com",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "/",
   },
 ];
 
@@ -139,13 +134,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/kabir-naved",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/newdevloper",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/naved-kabir",
   },
 ];
